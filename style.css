@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
+}
+
+body {
+    background-image: url("images/bg-desktop-dark.jpg");
+    background-repeat: no-repeat;
+    background-color: #223;
+}
+
+.background {
+    padding: 0 7%;
+    max-width: 900px;
+}
+
+section {
+    margin-top: 3vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    min-height: 20vh;
+}
+
+.header h1 {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1rem;
+}
+.turn-mode{
+    color: black
+}
+.input-area {
+    background-color: #223;
+    padding: 20px;
+    border-radius: .4rem;
+    width: 100%;;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.form-control{
+    display: flex;
+    gap: 1rem;
+}
+.todo-checkbox{
+}
+.todo-input {
+    background-color: #223;
+    border: #223;
+    color: white;;
+    width: 900px;
+}
+
+.todo-list {
+    margin-top: 30px;
+    background-color: #335;
+    border-radius: .4rem;
+    width: 86vw;
+}
+
+.todo-content {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid #888;
+}
+.todo-content h3{
+    font-size: .8rem;
+}
+
+.todo-status{
+    padding: 1rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.fake-checkbox{
+    background-color: white;
+    padding: .1rem;
+    border-radius: 50%;
+    font-size: .5rem;
+}
