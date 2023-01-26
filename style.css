@@ -39,14 +39,17 @@ section {
     color: white;
     letter-spacing: 1rem;
 }
-.turn-mode{
+
+.turn-mode {
     color: black
 }
+
 .input-area {
     background-color: #223;
     padding: 20px;
     border-radius: .4rem;
-    width: 100%;;
+    width: 100%;
+    ;
 }
 
 textarea:focus,
@@ -57,17 +60,46 @@ select:focus {
     outline: 0;
 }
 
-.form-control{
+.form-control {
     display: flex;
     gap: 1rem;
 }
-.todo-checkbox{
-}
+
+.todo-checkbox {}
+
 .todo-input {
     background-color: #223;
     border: #223;
-    color: white;;
+    color: white;
+    ;
     width: 900px;
+}
+
+
+
+.todo-status {
+    padding: 1rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+button {
+    color: white;
+    background-color: #335;
+    border: 1px solid white;
+    padding: .6rem 1.2rem;
+    border-radius: 1.1rem;
+}
+
+.delete-item {
+    background-color: white;
+    color: black;
+    padding: .1rem .6rem;
+    border-radius: 50%;
+    justify-content: end;
 }
 
 .todo-list {
@@ -79,23 +111,28 @@ select:focus {
 
 .todo-content {
     display: flex;
+    flex-direction: row;
     padding: 1rem;
     gap: 1rem;
     border-bottom: 1px solid #888;
-}
-.todo-content h3{
-    font-size: .8rem;
-}
-
-.todo-status{
-    padding: 1rem;
-    font-size: 12px;
-    display: flex;
     justify-content: space-between;
 }
-.fake-checkbox{
+.todo-content h3 {
+    align-items: center;
+    justify-content: center;
+}
+.fake-checkbox {
     background-color: white;
     padding: .1rem;
     border-radius: 50%;
     font-size: .5rem;
+}
+
+.action-zone{
+    display: flex;
+    gap: 1rem;
+    overflow-wrap: break-word;
+}
+.delete-item{
+    cursor: pointer;
 }

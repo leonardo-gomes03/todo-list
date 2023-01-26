@@ -12,7 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -24,33 +24,26 @@
       </div>
       <div class="input-area">
         <form id="todo-form">
-          <div class="form-control">
-            <div class="fake-checkbox">ooo</div>
-            <input type="text" class="todo-input" id="todo-input" placeholder="Create a new todo...">
+          <div class="form-control" id="form-control">
+            <input type="text" class="todo-input" id="todo-input" placeholder="O que você vai fazer?" />
+            <button type="submit" id="btn-submit">Enviar</button>
+
           </div>
         </form>
       </div>
     </section>
     <div class="todo-list">
-      <div class="todo-itens">
-        <div class="todo-content">
-          <div class="fake-checkbox">ooo</div>
-          <h3>Tarefa 1</h3>
-        </div>
-        <div class="todo-content">
-          <div class="fake-checkbox">ooo</div>
-          <h3>Tarefa 1</h3>
-        </div>
-        <div class="todo-content">
-          <div class="fake-checkbox">ooo</div>
-          <h3>Tarefa 1</h3>
-        </div>
-      </div>
+      <ul class="todo-itens" id="todo-itens">
+        
+
+      </ul>
+
       <div class="todo-status">
         <p>Olá</p>
         <p>Mundo</p>
       </div>
     </div>
+
   </div>
 
 </body>
