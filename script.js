@@ -31,7 +31,7 @@ todoForm.addEventListener("submit", (e) => {
 
     <div class="action-zone">
         <input type="checkbox" name="" id="">
-        <span>${value}</span>
+        <span class="span-text">${value}</span>
     </div>
     `
 
@@ -51,3 +51,12 @@ ul.addEventListener("click", (e) => {
         }
     }
 })
+
+////// DARK MODE //////
+const toggle = document.querySelector("#dark-mode-toggle");
+
+toggle.addEventListener("click", () => {
+    console.log("darkmode on");
+    document.body.classList.toggle("white-mode");
+    //toggle.innerText = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+});

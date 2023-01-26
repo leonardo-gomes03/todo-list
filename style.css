@@ -13,6 +13,7 @@ body {
     background-image: url("images/bg-desktop-dark.jpg");
     background-repeat: no-repeat;
     background-color: #223;
+    color: white;
 }
 
 .background {
@@ -36,7 +37,6 @@ section {
 
 .header h1 {
     font-size: 40px;
-    color: white;
     letter-spacing: 1rem;
 }
 
@@ -135,4 +135,43 @@ button {
 }
 .delete-item{
     cursor: pointer;
+}
+
+/* Configurando o darkmode */
+.white-mode{
+    background-color: white;
+    color: black;
+    background-image: url("images/bg-desktop-light.jpg");
+}
+
+.white-mode .input-area {
+    background-color: white;
+    padding: 20px;
+    border-radius: .4rem;
+    width: 100%;
+}
+
+
+.white-mode .todo-input {
+    background-color: white;
+    border: white;
+    color: black;
+    width: 900px;
+}
+
+.white-mode button {
+    color: #335;
+    background-color: white;
+    border: 1px solid #335;
+}
+
+.white-mode .todo-list {
+    margin-top: 30px;
+    color: #335;
+    background-color: white;
+    border-radius: .4rem;
+    width: 86vw;
+}
+.white-mode .span-text{
+    color: black;
 }
