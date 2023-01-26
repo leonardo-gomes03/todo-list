@@ -58,5 +58,10 @@ const toggle = document.querySelector("#dark-mode-toggle");
 toggle.addEventListener("click", () => {
     console.log("darkmode on");
     document.body.classList.toggle("white-mode");
-    //toggle.innerText = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+    
+    if (document.body.classList.contains("white-mode")){
+        toggle.setAttribute('src', 'images/icon-moon.svg')
+    } else {
+        toggle.setAttribute('src', 'images/icon-sun.svg')
+    }
 });

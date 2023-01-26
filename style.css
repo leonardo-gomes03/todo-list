@@ -45,7 +45,7 @@ section {
 }
 
 .input-area {
-    background-color: #223;
+    background-color: #335;
     padding: 20px;
     border-radius: .4rem;
     width: 100%;
@@ -62,17 +62,15 @@ select:focus {
 
 .form-control {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
 }
 
-.todo-checkbox {}
-
 .todo-input {
-    background-color: #223;
-    border: #223;
+    background-color: #335;
+    border: #335;
     color: white;
-    ;
-    width: 900px;
+    width: 100%;
 }
 
 
@@ -81,7 +79,7 @@ select:focus {
     padding: 1rem;
     font-size: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -139,7 +137,7 @@ button {
 
 /* Configurando o darkmode */
 .white-mode{
-    background-color: white;
+    background-color: #ddd;
     color: black;
     background-image: url("images/bg-desktop-light.jpg");
 }
@@ -174,4 +172,8 @@ button {
 }
 .white-mode .span-text{
     color: black;
+}
+
+.white-mode .todo-status p{
+    color: black
 }
