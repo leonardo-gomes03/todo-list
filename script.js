@@ -45,23 +45,23 @@ todoForm.addEventListener("submit", (e) => {
 })
 
 ul.addEventListener("click", (e) => {
-    if(e.target.classList.contains('delete-item')){
-        if(confirm("Deseja deletar esse item?")){
+    if (e.target.classList.contains('delete-item')) {
+        if (confirm("Deseja deletar esse item?")) {
             e.target.parentElement.remove()
         }
     }
 })
 
 ////// DARK MODE //////
-const toggle = document.querySelector("#dark-mode-toggle");
+const darkMode = document.querySelector("#dark-mode-toggle");
 
-toggle.addEventListener("click", () => {
+darkMode.addEventListener("click", () => {
     console.log("darkmode on");
     document.body.classList.toggle("white-mode");
-    
-    if (document.body.classList.contains("white-mode")){
-        toggle.setAttribute('src', 'images/icon-moon.svg')
+
+    if (document.body.classList.contains("white-mode")) {
+        darkMode.setAttribute('src', 'images/icon-moon.svg')
     } else {
-        toggle.setAttribute('src', 'images/icon-sun.svg')
+        darkMode.setAttribute('src', 'images/icon-sun.svg')
     }
 });

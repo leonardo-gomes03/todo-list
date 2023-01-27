@@ -13,7 +13,9 @@ body {
     background-image: url("images/bg-desktop-dark.jpg");
     background-repeat: no-repeat;
     background-color: #223;
+    background-size: cover;
     color: white;
+    margin: 0 auto;
 }
 
 .background {
@@ -26,6 +28,8 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
+    width: 86vw;;
 }
 
 .header {
